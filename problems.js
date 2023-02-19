@@ -27,6 +27,11 @@ function oddReverse(arr) {
 function secondPower(arr) {
     // Return an array containing all indices that are powers of 2
     // Your code here
+    let powersValues= []
+    for(let i=0; Math.pow(2, i)< arr.length; i++){
+        powersValues.push(arr[Math.pow(2, i)]);
+    }
+    return powersValues;
 }
 
 function nthPower(arr, n) {
@@ -45,6 +50,7 @@ function secondHalf(arr) {
     // Exclude middle index on odd length arr
     // Your code here
 }
+
 
 module.exports = {
     oddIndices,
