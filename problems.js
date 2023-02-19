@@ -59,6 +59,11 @@ function secondHalf(arr) {
     // Return an array containing the second half of an array
     // Exclude middle index on odd length arr
     // Your code here
+    let midIndex= Math.floor(arr.length/2)
+    if(arr.length%2==0)
+
+        return arr.slice(midIndex);
+    return arr.slice(midIndex+1);
 }
 
 
