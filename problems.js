@@ -11,6 +11,17 @@ function oddIndices(arr) {
 function oddReverse(arr) {
     // Return an array containing all the odd indices starting from the end
     // Your code here
+    let reverseOddIndicesValues= [];
+    let i;
+    if(arr.length%2==0){
+        i=arr.length-1;
+    }else{
+        i= arr.length-2;
+    }
+    for (; i>=1; i-=2){
+        reverseOddIndicesValues.push(arr[i]);
+    }
+    return reverseOddIndicesValues;
 }
 
 function secondPower(arr) {
